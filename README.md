@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Pet Office - Veterinary Website
 
-## Getting Started
+A modern veterinary clinic website built with **Next.js**, **Tailwind CSS (v4)**, **ShadCN UI** and full **dark mode** support. Designed for **responsiveness**, mobile-first access, and easy WhatsApp or phone scheduling.
 
-First, run the development server:
+## Preview
+
+![Preview of The Pet Office website](https://portfolio-veterinary-website-nextjs.vercel.app/)
+
+---
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com)
+- **Components**: [shadcn/ui](https://ui.shadcn.dev)
+- **Icons**: [Lucide](https://lucide.dev)
+- **Theme toggle**: [`next-themes`](https://github.com/pacocoursey/next-themes)
+- **Image optimization**: `next/image`
+- **Dark Mode**: Class-based switching via `ThemeProvider`
+
+---
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx        # Root layout with ThemeProvider and global styles
+│   ├── page.tsx          # Main veterinary landing page
+    └── globals.css       # Tailwind + theme definitions
+└── components/
+    ├── ThemeToggle.tsx   # Light/Dark mode toggle button
+    └── ui/               # ShadCN UI components
+
+```
+---
+
+## Features
+
+- Fully responsive layout
+- Dark mode toggle
+- One-click WhatsApp and phone buttons
+- Clean semantic HTML with Tailwind utility classes
+- Highlighting of neurologist specialization
+- Contact section with location, hours, and scheduling CTA
+---
+
+## Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/arthurgpchagas/portfolio-veterinary-website-nextjs.git
+cd portfolio-veterinary-website-nextjs
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy to Vercel
 
-## Learn More
+> This project is fully optimized for [Vercel](https://vercel.com)
 
-To learn more about Next.js, take a look at the following resources:
+1. Push your repo to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Click **“New Project”**
+4. Select your repository
+5. Deploy ✅
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact Integration
 
-## Deploy on Vercel
+- **WhatsApp**: Opens in app/browser
+- **Phone**: `tel:` protocol for direct mobile call
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```tsx
+<a href="https://wa.me/number">...</a>
+<a href="tel:+number">...</a>
+```
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License. Feel free to use it as a template!
