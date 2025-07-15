@@ -14,8 +14,14 @@ export default function VeterinarianWebsite() {
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Heart className="h-8 w-8 text-blue-600" />
-            <h1 className="text-2xl font-bold">The Pet Office</h1>
+          <Image 
+                src="/logo-vet.png"
+                alt="logo"
+                width={100}
+                height={100}
+                className="w-18 h-18 rounded-full object-cover" 
+              />
+            <span className="font-typewriter text-2xl font-bold">the Pet Office</span>
           </div>
           <div className="flex items-center gap-4">
             <a href="https://wa.me/5511985473316" target="_blank" rel="noopener noreferrer">
@@ -39,7 +45,7 @@ export default function VeterinarianWebsite() {
             Paixão em cuidar dos animais
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Na The Pet Office, nós trabalhamos com muita compreensão acerca do tratamento do seu pet, com muito carinho e muito amor. A saúde e a felicidade dele é a nossa maior prioridade!
+            Na the Pet Office, nós trabalhamos com muita compreensão acerca do tratamento do seu pet, com muito carinho e muito amor. A saúde e a felicidade dele é a nossa maior prioridade!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://wa.me/5511985473316" target="_blank" rel="noopener noreferrer">
@@ -235,12 +241,18 @@ export default function VeterinarianWebsite() {
     <footer className="border-t py-12 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <Heart className="h-6 w-6 text-blue-600"/>
-            <span className="font-semibold">The Pet Office</span>
+          <div className="flex items-center justify-center gap-2 mb-4 md:mb-0">
+            <Image 
+                src="/logo-vet.png"
+                alt="logo"
+                width={100}
+                height={100}
+                className="w-15 h-15 rounded-full object-cover" 
+              />
+            <span className="font-typewriter text-lg font-bold">the Pet Office</span>
           </div>
           <p className="text-sm text-muted-foreground text-center md:text-right">
-          © 2025 The Pet Office. Todos os direitos reservados.
+          © 2025 the Pet Office. Todos os direitos reservados.
           <br />
           Veterinária licenciada pelo CRMV-SP
           </p>
