@@ -4,7 +4,7 @@ A modern veterinary clinic website built with **Next.js**, **Tailwind CSS (v4)**
 
 ## Preview
 
-![Preview of The Pet Office website](https://portfolio-veterinary-website-nextjs.vercel.app/)
+[Preview of The Pet Office website](https://portfolio-veterinary-website-nextjs.vercel.app/)
 
 ---
 
