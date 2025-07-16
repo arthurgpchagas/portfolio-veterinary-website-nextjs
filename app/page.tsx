@@ -143,7 +143,7 @@ export default function VeterinarianWebsite() {
     <section className="py-20 px-4 bg-muted/50">
       <div className="mx-auto max-w-4xl">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 gap-8 items-center mb-6">
-          <div className="">
+          <div className="mb-6">
             <h3 className="text-3xl font-bold mb-6">Conheça a Dr. Vivian Chagas</h3>
             <p className="text-muted-foreground mb-6">
             Sou médica veterinária formada pela Universidade de Santo Amaro (UNISA) em 2019, com duas pós-graduações: Clínica Médica e Cirúrgica de Pequenos Animais - UNISA e Neurologia e Neurocirurgia de Pequenos Animais - Faculdade Qualittas. Atuo com dedicação na área de clínica médica, neurologia, intensivismo e suporte ao diagnóstico, com experiência em UTI, internação semi-intensiva, manejo de pacientes neurológicos, politratados e crônicos. Acredito em uma medicina veterinária acessível, respeitosa e cuidadosa com os tutores e seus animais — levando estrutura, conhecimento e empatia até a porta da sua casa.
