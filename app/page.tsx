@@ -150,13 +150,13 @@ export default function VeterinarianWebsite() {
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Badge variant="secondary">Unisa - Graduação em Veterinária</Badge>
+                <Badge variant="secondary">Graduação em Veterinária</Badge>
               </div>
               <div className="flex items-center gap-3">
-                <Badge variant="secondary">Unisa - Pós em Clínica Médica e Cirúrgica de Pequenos Animais</Badge>
+                <Badge variant="secondary">Pós em Clínica Médica e Cirúrgica de Pequenos Animais</Badge>
               </div>
               <div className="flex items-center gap-3">
-                <Badge variant="secondary">Qualittas - Pós em Neurologia e Neurocirurgia de Pequenos Animais</Badge>
+                <Badge variant="secondary">Pós em Neurologia e Neurocirurgia de Pequenos Animais</Badge>
               </div>
             </div>
           </div>
