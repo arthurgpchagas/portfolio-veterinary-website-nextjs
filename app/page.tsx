@@ -11,7 +11,7 @@ export default function VeterinarianWebsite() {
     <div className="min-h-screen bg-background">
       
       {/* Header */}
-      <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+      <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 lg:z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
           <Image 
@@ -41,11 +41,11 @@ export default function VeterinarianWebsite() {
           <Badge variant="secondary" className="mb-4">
             Cuidando dos bichinhos desde 2020
           </Badge>
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text">
+          <h2 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text">
             Paixão em cuidar dos animais
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Na the Pet Office, nós trabalhamos com muita compreensão acerca do tratamento do seu pet, com muito carinho e muito amor. A saúde e a felicidade dele é a nossa maior prioridade!
+          <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto">
+            Na the Pet Office, oferecemos atendimento veterinário domiciliar especializado em clínica médica e neurologia de pequenos animais, com foco em conforto, segurança e individualização do cuidado. Realizamos consultas clínicas, avaliações neurológicas, aplicações de vacinas, medicações, coleta de exames laboratoriais e procedimentos simples diretamente na sua casa — ideal para pets com dificuldade de locomoção, quadros crônicos ou que simplesmente ficam mais tranquilos no ambiente familiar. Nosso compromisso é oferecer um cuidado completo, ético e com acolhimento, com foco em diagnóstico preciso e bem-estar animal.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://wa.me/5511985473316" target="_blank" rel="noopener noreferrer">
@@ -126,21 +126,33 @@ export default function VeterinarianWebsite() {
           <div>
             <h3 className="text-3xl font-bold mb-6">Conheça a Dr. Vivian Garcia Chagas</h3>
             <p className="text-muted-foreground mb-6">
-              Com mais de 7 anos de experiência como médica veterinária, Dr. Vivian é dedicada a prover a mais alta qualidade de cuidados para seu amados Pets. Ela é graduada pela Unisa e atualmente é especialista Neurológica com foco em cirurgias de coluna.
+            Sou médica veterinária formada pela Universidade de Santo Amaro (UNISA) em 2019, com duas pós-graduações:
+            <br />
+            <br />
+	            •	Clínica Médica e Cirúrgica de Pequenos Animais - UNISA
+              <br />
+              <br />
+	            •	Neurologia e Neurocirurgia de Pequenos Animais - Faculdade Qualittas
+              <br />
+              <br />
+            Atuo com dedicação na área de clínica médica, neurologia, intensivismo e suporte ao diagnóstico, com experiência em UTI, internação semi-intensiva, manejo de pacientes neurológicos, politratados e crônicos.
+            <br />
+            <br />
+            Acredito em uma medicina veterinária acessível, respeitosa e cuidadosa com os tutores e seus animais — levando estrutura, conhecimento e empatia até a porta da sua casa.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Badge variant="secondary">Unisa - Universidade de Santo Amaro - Graduação em Veterinária</Badge>
+                <Badge variant="secondary">Unisa - Graduação em Veterinária</Badge>
               </div>
               <div className="flex items-center gap-3">
-                <Badge variant="secondary">7+ anos de experiência</Badge>
+                <Badge variant="secondary">Unisa - Pós em Clínica Médica e Cirúrgica de Pequenos Animais</Badge>
               </div>
               <div className="flex items-center gap-3">
-                <Badge variant="secondary">Especlista Neurológica</Badge>
+                <Badge variant="secondary">Faculdade Qualittas - Pós em Neurologia e Neurocirurgia de Pequenos Animais</Badge>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-blue-100 to-green-100 dark:from-blue-900/20 dark:to-green-900/20 rounded-lg p-8 text-center">
+          <div className="bg-gradient-to-br from-blue-100 to-green-100 dark:from-blue-900/20 dark:to-green-900/20 rounded-lg p-30 sm:p-8 md:p-30 text-center max-w-prose mx-auto w-full">
             <Image 
               src="/1.PNG"
               alt="Dr. Vivian Chagas"
