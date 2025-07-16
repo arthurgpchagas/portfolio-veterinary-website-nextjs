@@ -2,7 +2,7 @@ import { ThemeToggle } from "@/components/ThemeToggle"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Clock, Heart, Shield, Stethoscope, Search, Syringe, MapPin } from "lucide-react"
+import { Phone, Clock, Heart, Shield, Stethoscope, Search, Syringe, MapPin, Scissors } from "lucide-react"
 import Image from "next/image"
 
 
@@ -75,33 +75,33 @@ export default function VeterinarianWebsite() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols.3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <Search className="h-12 w-12 text-blue-600 mb-4"/>
+                  <Search className="h-12 w-12 text-orange-600 mb-4"/>
                   <CardTitle>Consulta com Neurologista</CardTitle>
                   <CardDescription>
-                    Atendemos como especialista Neurológico para cuidar ainda mais do seu bichinho.
+                  Atendimento especializado em Neurologia Veterinária para cães e gatos. Avaliamos alterações neurológicas como convulsões, alterações de marcha, tremores, mudanças comportamentais e muito mais — com cuidado, empatia e atenção individualizada.
                     </CardDescription>
                 </CardHeader>
               </Card>
               
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <Stethoscope className="h-12 w-12 text-blue-600 mb-4"/>
+                  <Stethoscope className="h-12 w-12 text-green-600 mb-4"/>
                   <CardTitle>Avaliação</CardTitle>
                   <CardDescription>
-                    Avaliamos o bem estar do seu pet através de checkups para prevenir doenças e manter a saúde.
+                  Realizamos avaliações clínicas completas para monitorar a saúde do seu pet. Nossos checkups ajudam a detectar doenças precocemente e garantir mais qualidade de vida ao seu companheiro.
                     </CardDescription>
                 </CardHeader>
               </Card>
 
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <Syringe className="h-12 w-12 text-blue-600 mb-4"/>
+                  <Syringe className="h-12 w-12 text-purple-600 mb-4"/>
                   <CardTitle>Vacinação</CardTitle>
                   <CardDescription>
-                    Fazemos todas as vacinas necessárias para prevenir doenças.
+                  Aplicamos todas as vacinas essenciais e orientamos sobre o calendário vacinal ideal para o seu pet, garantindo proteção contra doenças graves e contagiosas.
                     </CardDescription>
                 </CardHeader>
               </Card>
@@ -115,30 +115,38 @@ export default function VeterinarianWebsite() {
                     </CardDescription>
                 </CardHeader>
               </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <Scissors className="h-12 w-12 text-pink-600 mb-4"/>
+                  <CardTitle>Medicação e Tratamentos</CardTitle>
+                  <CardDescription>
+                  Administração segura e cuidadosa de medicamentos injetáveis ou via oral, com orientação personalizada para cada caso.
+                    </CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <Heart className="h-12 w-12 text-red-600 mb-4"/>
+                  <CardTitle>Coleta de Exames</CardTitle>
+                  <CardDescription>
+                    Coletamos exames laboratoriais (sangue, urina, fezes, entre outros) diretamente no conforto da sua casa, com todo cuidado necessário para garantir diagnósticos precisos.
+                    </CardDescription>
+                </CardHeader>
+              </Card>
           </div>
         </div>
       </section>
 
     {/* About Section */}
     <section className="py-20 px-4 bg-muted/50">
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-3xl font-bold mb-6">Conheça a Dr. Vivian Garcia Chagas</h3>
+      <div className="mx-auto max-w-4xl">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 gap-8 items-center">
+          <div className="">
+            <h3 className="text-3xl font-bold mb-6">Conheça a Dr. Vivian Chagas</h3>
             <p className="text-muted-foreground mb-6">
-            Sou médica veterinária formada pela Universidade de Santo Amaro (UNISA) em 2019, com duas pós-graduações:
-            <br />
-            <br />
-	            •	Clínica Médica e Cirúrgica de Pequenos Animais - UNISA
-              <br />
-              <br />
-	            •	Neurologia e Neurocirurgia de Pequenos Animais - Faculdade Qualittas
-              <br />
-              <br />
-            Atuo com dedicação na área de clínica médica, neurologia, intensivismo e suporte ao diagnóstico, com experiência em UTI, internação semi-intensiva, manejo de pacientes neurológicos, politratados e crônicos.
-            <br />
-            <br />
-            Acredito em uma medicina veterinária acessível, respeitosa e cuidadosa com os tutores e seus animais — levando estrutura, conhecimento e empatia até a porta da sua casa.
+            Sou médica veterinária formada pela Universidade de Santo Amaro (UNISA) em 2019, com duas pós-graduações: Clínica Médica e Cirúrgica de Pequenos Animais - UNISA e Neurologia e Neurocirurgia de Pequenos Animais - Faculdade Qualittas. Atuo com dedicação na área de clínica médica, neurologia, intensivismo e suporte ao diagnóstico, com experiência em UTI, internação semi-intensiva, manejo de pacientes neurológicos, politratados e crônicos. Acredito em uma medicina veterinária acessível, respeitosa e cuidadosa com os tutores e seus animais — levando estrutura, conhecimento e empatia até a porta da sua casa.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
@@ -148,11 +156,11 @@ export default function VeterinarianWebsite() {
                 <Badge variant="secondary">Unisa - Pós em Clínica Médica e Cirúrgica de Pequenos Animais</Badge>
               </div>
               <div className="flex items-center gap-3">
-                <Badge variant="secondary">Faculdade Qualittas - Pós em Neurologia e Neurocirurgia de Pequenos Animais</Badge>
+                <Badge variant="secondary">Qualittas - Pós em Neurologia e Neurocirurgia de Pequenos Animais</Badge>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-blue-100 to-green-100 dark:from-blue-900/20 dark:to-green-900/20 rounded-lg p-30 sm:p-8 md:p-30 text-center max-w-prose mx-auto w-full">
+          <div className="bg-gradient-to-br from-blue-100 to-green-100 dark:from-blue-900/20 dark:to-green-900/20 rounded-lg p-8 lg:p-23 text-center" >
             <Image 
               src="/1.PNG"
               alt="Dr. Vivian Chagas"
@@ -160,8 +168,8 @@ export default function VeterinarianWebsite() {
               height={192}
               className="w-48 h-48 rounded-full mx-auto mb-4 object-cover" 
             />
-            <h4 className="text-xl font-sembold mb-2">Dr. Vivian Chagas, Neuro</h4>
-            <p className="text-muted-foreground">Neuroveterinária e Proprietária da The Pet Office</p>
+            <h4 className="text-xl font-semibold mb-2">Dr. Vivian Chagas, Neuro</h4>
+            <p className="text-muted-foreground">Neuroveterinária e Proprietária da the Pet Office</p>
           </div>
         </div>
       </div>
