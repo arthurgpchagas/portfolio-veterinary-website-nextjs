@@ -71,7 +71,7 @@ export default function VeterinarianWebsite() {
             Nossos Serviços
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-            Oferecemos alguns serviços para manter a saúde e a felicidade do seu animalzinho em dia!
+            Oferecemos alguns serviços para manter a saúde e a felicidade do seu pet em dia!
             </p>
           </div>
 
@@ -142,7 +142,7 @@ export default function VeterinarianWebsite() {
     {/* About Section */}
     <section className="py-20 px-4 bg-muted/50">
       <div className="mx-auto max-w-4xl">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 gap-8 items-center">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 gap-8 items-center mb-6">
           <div className="">
             <h3 className="text-3xl font-bold mb-6">Conheça a Dr. Vivian Chagas</h3>
             <p className="text-muted-foreground mb-6">
