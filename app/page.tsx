@@ -275,6 +275,8 @@ export default function VeterinarianWebsite() {
           © 2025 the Pet Office. Todos os direitos reservados.
           <br />
           Veterinária licenciada pelo CRMV-SP
+          <br />
+          Criado por Arthur Chagas
           </p>
         </div>
       </div>
